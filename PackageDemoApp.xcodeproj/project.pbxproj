@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		9BBE769224AB25A400C607B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE769124AB25A400C607B6 /* Assets.xcassets */; };
 		9BBE769524AB25A400C607B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE769424AB25A400C607B6 /* Preview Assets.xcassets */; };
 		9BBE769824AB25A400C607B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE769624AB25A400C607B6 /* LaunchScreen.storyboard */; };
+		9BBE76A324AB271500C607B6 /* PackageLogic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBE76A224AB271500C607B6 /* PackageLogic */; };
+		9BBE76A524AB271800C607B6 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBE76A424AB271800C607B6 /* UIComponents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9BBE769424AB25A400C607B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9BBE769724AB25A400C607B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BBE769924AB25A400C607B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BBE769F24AB263400C607B6 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIComponents; sourceTree = "<group>"; };
+		9BBE76A024AB264E00C607B6 /* PackageLogic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PackageLogic; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBE76A524AB271800C607B6 /* UIComponents in Frameworks */,
+				9BBE76A324AB271500C607B6 /* PackageLogic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +46,11 @@
 		9BBE767F24AB25A300C607B6 = {
 			isa = PBXGroup;
 			children = (
+				9BBE76A024AB264E00C607B6 /* PackageLogic */,
+				9BBE769F24AB263400C607B6 /* UIComponents */,
 				9BBE768A24AB25A300C607B6 /* PackageDemoApp */,
 				9BBE768924AB25A300C607B6 /* Products */,
+				9BBE76A124AB271500C607B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +84,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9BBE76A124AB271500C607B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +107,10 @@
 			dependencies = (
 			);
 			name = PackageDemoApp;
+			packageProductDependencies = (
+				9BBE76A224AB271500C607B6 /* PackageLogic */,
+				9BBE76A424AB271800C607B6 /* UIComponents */,
+			);
 			productName = PackageDemoApp;
 			productReference = 9BBE768824AB25A300C607B6 /* PackageDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -345,6 +365,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9BBE76A224AB271500C607B6 /* PackageLogic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PackageLogic;
+		};
+		9BBE76A424AB271800C607B6 /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9BBE768024AB25A300C607B6 /* Project object */;
 }

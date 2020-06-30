@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import PackageLogic
+import UIComponents
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!").padding()
+        VStack {
+            Text("Hello, world!")
+                .padding()
+
+            Card(value: .iOS)
+                .aspectRatio(contentMode: .fit)
+                .padding()
+        }
     }
 }
 
